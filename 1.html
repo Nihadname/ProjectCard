@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- Container for cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-6">
+    <!-- Product Card -->
+    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 relative transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 overflow-hidden">
+      <!-- Discount Badge -->
+      <div class="absolute top-4 left-4 bg-blue-500 text-white text-xs font-semibold rounded-full px-4 py-1 shadow-md z-10">
+        Nağd alışlarda <br /> Endirim 50 AZN
+      </div>
+
+      <!-- Wishlist Icon -->
+      <div class="absolute top-4 right-4 flex space-x-2 z-20">
+        <button class="text-gray-500 hover:text-red-600 focus:text-red-700 transition-all duration-200 ease-in-out">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 19.071L12 12.193l6.879 6.878M5.121 12.193L12 5.314l6.879 6.879" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Product Image -->
+      <img src="https://api.smartelectronics.az/uploads/products/cd28760926e7480abf4cb425b20e669613blue.jpg" alt="Product Image" class="h-64 object-cover rounded-lg mb-4 transition duration-300 ease-in-out hover:scale-105 z-0" style="width: 100%; max-height: 250px; object-fit: contain;" />
+
+      <!-- Product Name -->
+      <h2 class="text-gray-900 font-bold text-lg mb-3 line-clamp-2">
+        LG GA-B459SBUM (OUTLET)
+      </h2>
+
+      <!-- Ratings -->
+      <div class="flex items-center mb-4">
+        <!-- Star Rating -->
+        <div class="flex items-center space-x-1">
+          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+          <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+        </div>
+        <span class="ml-2 text-sm text-gray-600">(4.0)</span>
+      </div>
+
+      <!-- Color Selection -->
+      <div class="flex items-center space-x-2 mb-4">
+        <!-- Color Option -->
+        <button class="w-6 h-6 rounded-full bg-red-500 border-2 border-transparent hover:border-gray-400 focus:ring-2 focus:ring-blue-500 transition-all duration-200"></button>
+        <button class="w-6 h-6 rounded-full bg-blue-500 border-2 border-transparent hover:border-gray-400 focus:ring-2 focus:ring-blue-500 transition-all duration-200"></button>
+        <button class="w-6 h-6 rounded-full bg-green-500 border-2 border-transparent hover:border-gray-400 focus:ring-2 focus:ring-blue-500 transition-all duration-200"></button>
+      </div>
+
+      <!-- Price and Monthly Payment -->
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex flex-col">
+          <span class="text-sm line-through text-gray-400">1299 AZN</span>
+          <span class="text-2xl font-bold text-gray-900">1249 AZN</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded text-xs font-semibold">
+            6 ay
+          </span>
+          <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded text-xs font-semibold">
+            12 ay
+          </span>
+        </div>
+      </div>
+
+      <!-- Monthly Payment Info -->
+      <div class="text-center mb-4">
+        <span class="text-sm text-gray-500">aylıq</span>
+        <span class="text-2xl font-bold text-gray-900">109 AZN</span>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col space-y-2">
+        <button class="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full px-6 py-3 text-sm font-semibold hover:from-blue-600 hover:to-blue-800 transition-all duration-200 ease-in-out shadow-lg hover:shadow-2xl">
+          1 kliklə al
+        </button>
+        <button class="bg-gray-100 text-gray-800 rounded-full px-6 py-3 text-sm font-semibold hover:bg-gray-200 transition-all duration-200 ease-in-out shadow-md">
+          Kredit
+        </button>
+        <button class="bg-green-500 text-white rounded-full px-6 py-3 text-sm font-semibold hover:bg-green-600 transition-all duration-200 ease-in-out shadow-lg">
+          Səbətə əlavə et
+        </button>
+      </div>
+    </div>
+    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 relative transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 overflow-hidden">
+        <!-- Discount Badge -->
+        <div class="absolute top-4 left-4 bg-blue-500 text-white text-xs font-semibold rounded-full px-4 py-1 shadow-md z-10">
+          Nağd alışlarda <br /> Endirim 50 AZN
+        </div>
+  
+        <!-- Wishlist Icon -->
+        <div class="absolute top-4 right-4 flex space-x-2 z-20">
+          <button class="text-gray-500 hover:text-red-600 focus:text-red-700 transition-all duration-200 ease-in-out">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 19.071L12 12.193l6.879 6.878M5.121 12.193L12 5.314l6.879 6.879" />
+            </svg>
+          </button>
+        </div>
+  
+        <!-- Product Image -->
+        <img src="https://api.smartelectronics.az/uploads/products/cd28760926e7480abf4cb425b20e669613blue.jpg" alt="Product Image" class="h-64 object-cover rounded-lg mb-4 transition duration-300 ease-in-out hover:scale-105 z-0" style="width: 100%; max-height: 250px; object-fit: contain;" />
+  
+        <!-- Product Name -->
+        <h2 class="text-gray-900 font-bold text-lg mb-3 line-clamp-2">
+          LG GA-B459SBUM (OUTLET)
+        </h2>
+  
+        <!-- Ratings -->
+        <div class="flex items-center mb-4">
+          <!-- Star Rating -->
+          <div class="flex items-center space-x-1">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+          </div>
+          <span class="ml-2 text-sm text-gray-600">(4.0)</span>
+        </div>
+  
+        <!-- Color Selection -->
+        <div class="flex items-center space-x-2 mb-4">
+          <!-- Color Option -->
+          <button class="w-6 h-6 rounded-full bg-red-500 border-2 border-transparent hover:border-gray-400 focus:ring-2 focus:ring-blue-500 transition-all duration-200"></button>
+          <button class="w-6 h-6 rounded-full bg-blue-500 border-2 border-transparent hover:border-gray-400 focus:ring-2 focus:ring-blue-500 transition-all duration-200"></button>
+          <button class="w-6 h-6 rounded-full bg-green-500 border-2 border-transparent hover:border-gray-400 focus:ring-2 focus:ring-blue-500 transition-all duration-200"></button>
+        </div>
+  
+        <!-- Price and Monthly Payment -->
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex flex-col">
+            <span class="text-sm line-through text-gray-400">1299 AZN</span>
+            <span class="text-2xl font-bold text-gray-900">1249 AZN</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded text-xs font-semibold">
+              6 ay
+            </span>
+            <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded text-xs font-semibold">
+              12 ay
+            </span>
+          </div>
+        </div>
+  
+        <!-- Monthly Payment Info -->
+        <div class="text-center mb-4">
+          <span class="text-sm text-gray-500">aylıq</span>
+          <span class="text-2xl font-bold text-gray-900">109 AZN</span>
+        </div>
+  
+        <!-- Action Buttons -->
+        <div class="flex flex-col space-y-2">
+          <button class="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full px-6 py-3 text-sm font-semibold hover:from-blue-600 hover:to-blue-800 transition-all duration-200 ease-in-out shadow-lg hover:shadow-2xl">
+            1 kliklə al
+          </button>
+          <button class="bg-gray-100 text-gray-800 rounded-full px-6 py-3 text-sm font-semibold hover:bg-gray-200 transition-all duration-200 ease-in-out shadow-md">
+            Kredit
+          </button>
+          <button class="bg-green-500 text-white rounded-full px-6 py-3 text-sm font-semibold hover:bg-green-600 transition-all duration-200 ease-in-out shadow-lg">
+            Səbətə əlavə et
+          </button>
+        </div>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 relative transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 overflow-hidden">
+        <!-- Discount Badge -->
+        <div class="absolute top-4 left-4 bg-blue-500 text-white text-xs font-semibold rounded-full px-4 py-1 shadow-md z-10">
+          Nağd alışlarda <br /> Endirim 50 AZN
+        </div>
+  
+        <!-- Wishlist Icon -->
+        <div class="absolute top-4 right-4 flex space-x-2 z-20">
+          <button class="text-gray-500 hover:text-red-600 focus:text-red-700 transition-all duration-200 ease-in-out">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 19.071L12 12.193l6.879 6.878M5.121 12.193L12 5.314l6.879 6.879" />
+            </svg>
+          </button>
+        </div>
+  
+        <!-- Product Image -->
+        <img src="https://api.smartelectronics.az/uploads/products/cd28760926e7480abf4cb425b20e669613blue.jpg" alt="Product Image" class="h-64 object-cover rounded-lg mb-4 transition duration-300 ease-in-out hover:scale-105 z-0" style="width: 100%; max-height: 250px; object-fit: contain;" />
+  
+        <!-- Product Name -->
+        <h2 class="text-gray-900 font-bold text-lg mb-3 line-clamp-2">
+          LG GA-B459SBUM (OUTLET)
+        </h2>
+  
+        <!-- Ratings -->
+        <div class="flex items-center mb-4">
+          <!-- Star Rating -->
+          <div class="flex items-center space-x-1">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+          </div>
+          <span class="ml-2 text-sm text-gray-600">(4.0)</span>
+        </div>
+  
+        <!-- Color Selection -->
+        <div class="flex items-center space-x-2 mb-4">
+          <!-- Color Option -->
+          <button class="w-6 h-6 rounded-full bg-red-500 border-2 border-transparent hover:border-gray-400 focus:ring-2 focus:ring-blue-500 transition-all duration-200"></button>
+          <button class="w-6 h-6 rounded-full bg-blue-500 border-2 border-transparent hover:border-gray-400 focus:ring-2 focus:ring-blue-500 transition-all duration-200"></button>
+          <button class="w-6 h-6 rounded-full bg-green-500 border-2 border-transparent hover:border-gray-400 focus:ring-2 focus:ring-blue-500 transition-all duration-200"></button>
+        </div>
+  
+        <!-- Price and Monthly Payment -->
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex flex-col">
+            <span class="text-sm line-through text-gray-400">1299 AZN</span>
+            <span class="text-2xl font-bold text-gray-900">1249 AZN</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded text-xs font-semibold">
+              6 ay
+            </span>
+            <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded text-xs font-semibold">
+              12 ay
+            </span>
+          </div>
+        </div>
+  
+        <!-- Monthly Payment Info -->
+        <div class="text-center mb-4">
+          <span class="text-sm text-gray-500">aylıq</span>
+          <span class="text-2xl font-bold text-gray-900">109 AZN</span>
+        </div>
+  
+        <!-- Action Buttons -->
+        <div class="flex flex-col space-y-2">
+          <button class="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full px-6 py-3 text-sm font-semibold hover:from-blue-600 hover:to-blue-800 transition-all duration-200 ease-in-out shadow-lg hover:shadow-2xl">
+            1 kliklə al
+          </button>
+          <button class="bg-gray-100 text-gray-800 rounded-full px-6 py-3 text-sm font-semibold hover:bg-gray-200 transition-all duration-200 ease-in-out shadow-md">
+            Kredit
+          </button>
+          <button class="bg-green-500 text-white rounded-full px-6 py-3 text-sm font-semibold hover:bg-green-600 transition-all duration-200 ease-in-out shadow-lg">
+            Səbətə əlavə et
+          </button>
+        </div>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 relative transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 overflow-hidden">
+        <!-- Discount Badge -->
+        <div class="absolute top-4 left-4 bg-blue-500 text-white text-xs font-semibold rounded-full px-4 py-1 shadow-md z-10">
+          Nağd alışlarda <br /> Endirim 50 AZN
+        </div>
+  
+        <!-- Wishlist Icon -->
+        <div class="absolute top-4 right-4 flex space-x-2 z-20">
+          <button class="text-gray-500 hover:text-red-600 focus:text-red-700 transition-all duration-200 ease-in-out">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 19.071L12 12.193l6.879 6.878M5.121 12.193L12 5.314l6.879 6.879" />
+            </svg>
+          </button>
+        </div>
+  
+        <!-- Product Image -->
+        <img src="https://api.smartelectronics.az/uploads/products/cd28760926e7480abf4cb425b20e669613blue.jpg" alt="Product Image" class="h-64 object-cover rounded-lg mb-4 transition duration-300 ease-in-out hover:scale-105 z-0" style="width: 100%; max-height: 250px; object-fit: contain;" />
+  
+        <!-- Product Name -->
+        <h2 class="text-gray-900 font-bold text-lg mb-3 line-clamp-2">
+          LG GA-B459SBUM (OUTLET)
+        </h2>
+  
+        <!-- Ratings -->
+        <div class="flex items-center mb-4">
+          <!-- Star Rating -->
+          <div class="flex items-center space-x-1">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+          </div>
+          <span class="ml-2 text-sm text-gray-600">(4.0)</span>
+        </div>
+  
+        <!-- Color Selection -->
+        <div class="flex items-center space-x-2 mb-4">
+          <!-- Color Option -->
+          <button class="w-6 h-6 rounded-full bg-red-500 border-2 border-transparent hover:border-gray-400 focus:ring-2 focus:ring-blue-500 transition-all duration-200"></button>
+          <button class="w-6 h-6 rounded-full bg-blue-500 border-2 border-transparent hover:border-gray-400 focus:ring-2 focus:ring-blue-500 transition-all duration-200"></button>
+          <button class="w-6 h-6 rounded-full bg-green-500 border-2 border-transparent hover:border-gray-400 focus:ring-2 focus:ring-blue-500 transition-all duration-200"></button>
+        </div>
+  
+        <!-- Price and Monthly Payment -->
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex flex-col">
+            <span class="text-sm line-through text-gray-400">1299 AZN</span>
+            <span class="text-2xl font-bold text-gray-900">1249 AZN</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded text-xs font-semibold">
+              6 ay
+            </span>
+            <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded text-xs font-semibold">
+              12 ay
+            </span>
+          </div>
+        </div>
+  
+        <!-- Monthly Payment Info -->
+        <div class="text-center mb-4">
+          <span class="text-sm text-gray-500">aylıq</span>
+          <span class="text-2xl font-bold text-gray-900">109 AZN</span>
+        </div>
+  
+        <!-- Action Buttons -->
+        <div class="flex flex-col space-y-2">
+          <button class="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full px-6 py-3 text-sm font-semibold hover:from-blue-600 hover:to-blue-800 transition-all duration-200 ease-in-out shadow-lg hover:shadow-2xl">
+            1 kliklə al
+          </button>
+          <button class="bg-gray-100 text-gray-800 rounded-full px-6 py-3 text-sm font-semibold hover:bg-gray-200 transition-all duration-200 ease-in-out shadow-md">
+            Kredit
+          </button>
+          <button class="bg-green-500 text-white rounded-full px-6 py-3 text-sm font-semibold hover:bg-green-600 transition-all duration-200 ease-in-out shadow-lg">
+            Səbətə əlavə et
+          </button>
+        </div>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 relative transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 overflow-hidden">
+        <!-- Discount Badge -->
+        <div class="absolute top-4 left-4 bg-blue-500 text-white text-xs font-semibold rounded-full px-4 py-1 shadow-md z-10">
+          Nağd alışlarda <br /> Endirim 50 AZN
+        </div>
+  
+        <!-- Wishlist Icon -->
+        <div class="absolute top-4 right-4 flex space-x-2 z-20">
+          <button class="text-gray-500 hover:text-red-600 focus:text-red-700 transition-all duration-200 ease-in-out">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 19.071L12 12.193l6.879 6.878M5.121 12.193L12 5.314l6.879 6.879" />
+            </svg>
+          </button>
+        </div>
+  
+        <!-- Product Image -->
+        <img src="https://api.smartelectronics.az/uploads/products/cd28760926e7480abf4cb425b20e669613blue.jpg" alt="Product Image" class="h-64 object-cover rounded-lg mb-4 transition duration-300 ease-in-out hover:scale-105 z-0" style="width: 100%; max-height: 250px; object-fit: contain;" />
+  
+        <!-- Product Name -->
+        <h2 class="text-gray-900 font-bold text-lg mb-3 line-clamp-2">
+          LG GA-B459SBUM (OUTLET)
+        </h2>
+  
+        <!-- Ratings -->
+        <div class="flex items-center mb-4">
+          <!-- Star Rating -->
+          <div class="flex items-center space-x-1">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z"/></svg>
+          </div>
+          <span class="ml-2 text-sm text-gray-600">(4.0)</span>
+        </div>
+  
+        <!-- Color Selection -->
+        <div class="flex items-center space-x-2 mb-4">
+          <!-- Color Option -->
+          <button class="w-6 h-6 rounded-full bg-red-500 border-2 border-transparent hover:border-gray-400 focus:ring-2 focus:ring-blue-500 transition-all duration-200"></button>
+          <button class="w-6 h-6 rounded-full bg-blue-500 border-2 border-transparent hover:border-gray-400 focus:ring-2 focus:ring-blue-500 transition-all duration-200"></button>
+          <button class="w-6 h-6 rounded-full bg-green-500 border-2 border-transparent hover:border-gray-400 focus:ring-2 focus:ring-blue-500 transition-all duration-200"></button>
+        </div>
+  
+        <!-- Price and Monthly Payment -->
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex flex-col">
+            <span class="text-sm line-through text-gray-400">1299 AZN</span>
+            <span class="text-2xl font-bold text-gray-900">1249 AZN</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded text-xs font-semibold">
+              6 ay
+            </span>
+            <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded text-xs font-semibold">
+              12 ay
+            </span>
+          </div>
+        </div>
+  
+        <!-- Monthly Payment Info -->
+        <div class="text-center mb-4">
+          <span class="text-sm text-gray-500">aylıq</span>
+          <span class="text-2xl font-bold text-gray-900">109 AZN</span>
+        </div>
+  
+        <!-- Action Buttons -->
+        <div class="flex flex-col space-y-2">
+          <button class="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full px-6 py-3 text-sm font-semibold hover:from-blue-600 hover:to-blue-800 transition-all duration-200 ease-in-out shadow-lg hover:shadow-2xl">
+            1 kliklə al
+          </button>
+          <button class="bg-gray-100 text-gray-800 rounded-full px-6 py-3 text-sm font-semibold hover:bg-gray-200 transition-all duration-200 ease-in-out shadow-md">
+            Kredit
+          </button>
+          <button class="bg-green-500 text-white rounded-full px-6 py-3 text-sm font-semibold hover:bg-green-600 transition-all duration-200 ease-in-out shadow-lg">
+            Səbətə əlavə et
+          </button>
+        </div>
+      </div>
+      
+  </div>
+
+</body>
+</html>
